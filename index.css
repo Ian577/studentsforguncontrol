@@ -121,13 +121,14 @@ button {
   
 button::before {
         content: "";
-        position: absolute;
+        position: center;
         top: 0%;
         left: 0%;
-        width: 150px;
-        height: 100px;
-        background: green;
+        width: 500px;
+        height: 450px;
+        background: #8a8988;
         transition: 0.5s ease-in-out;
+        font-size: 40px
     }
   
 button:hover::before {
