@@ -1,5 +1,5 @@
 .header {
-    padding: 20px; /* some padding */
+    padding: 40px; /* some padding */
     text-align: center; /* center the text */
     background: #8bcd51; /* light blue background */
     color: black; /* black text color */
@@ -7,7 +7,7 @@
 
 .div {
     padding: 10px;
-    position: relative;
+    position: fixed;
 }
 
 .biheader {
