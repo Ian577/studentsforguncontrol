@@ -112,7 +112,7 @@ body {
 }
 
 button {
-        position: center;
+        position: absolute;
         top: 50%;
         left: 50%;
         font-size: 20px;
@@ -121,11 +121,11 @@ button {
   
 button::before {
         content: "";
-        position: center;
+        position: absolute;
         top: 0%;
         left: 0%;
-        width: 500%;
-        height: 450%;
+        width: 500px;
+        height: 450px;
         background: #8a8988;
         transition: 0.5s ease-in-out;
     }
