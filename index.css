@@ -161,6 +161,7 @@ button.s2 {
         background: #d8dbd2;
         color: #333333;
         transition: 0.6s ease-in-out;
+        z-index: 1;
     }
   
 button.s2::before {
