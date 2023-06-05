@@ -1,0 +1,112 @@
+.header {
+    padding: 10px; /* some padding */
+    text-align: center; /* center the text */
+    background: #bdffe8; /* light blue background */
+    color: black; /* black text color */
+}
+
+.biheader {
+    padding: 120px;
+    text-align: center;
+    background: #bdffe8;
+    color: black;
+}
+
+.paragraph {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    background: #f1f1f1f1;
+}
+
+.break {
+    padding-top: 5%;
+}
+
+.header h1 { /* increases size of header */
+    font-size: 55px;
+}
+
+.header h2 {
+    font-size: 25px;
+}
+
+.biheader h1 { /* increases size of header */
+    font-size: 55px;
+}
+
+.biheader h2 {
+    font-size: 25px;
+}
+
+.navbar { /* style the top of the navigation bar */
+    overflow: auto; /* hide overflow */
+    background-color: #333; /* dark background color */
+}
+
+.navbar a {
+    float: left; /* make sure the links stay side-by-side */
+    display: block; /* for responsive reasons */
+    color: white; /* white text color */
+    text-align: center; /* canter the text */
+    padding: 16px 20px; /* adds padding */
+    text-decoration: none; /* removes underline */
+}
+
+.navbar a.right { /* right aligned link */
+    float: right; /* float links to the right */
+}
+
+.navbar a:hover { /* change color hen mouse hovers over */
+    background-color: #aaaaaa; /* grey background color */
+    color: black; /* black text color */
+}
+
+* { /* ensure proper sizing */
+    box-sizing: border-box;
+}
+
+.row { /* column container */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side { /* sidebar/left column */
+    flex: 30%; /* width of sidebar */
+    background-color: #cccccc; /* light background color */
+    padding: 20px; /* some paddind */
+}
+
+.side p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.main { /* main cloumn */
+    flex: 70%; /* width of main content */
+    background-color: #f1f1f1; /* background color */
+    padding: 20px; /* some padding */
+}
+
+.main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+body {
+    background-color: #f1f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
