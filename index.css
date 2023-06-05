@@ -155,7 +155,7 @@ button.s2 {
     }
   
 button.s2::before {
-        content: "12";
+        content: "32";
         position: absolute;
         top: 0%;
         left: 0%;
@@ -168,6 +168,6 @@ button.s2::before {
     }
   
 button.s2:hover::before {
-        left: -100%;
+        left: 100%;
     }
 
