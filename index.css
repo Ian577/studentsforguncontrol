@@ -117,6 +117,8 @@ button {
         left: 50%;
         font-size: 20px;
         padding: 15px;
+        width: 500px;
+        height: 450px;
     }
   
 button::before {
@@ -128,7 +130,7 @@ button::before {
         height: 450px;
         background: #8a8988;
         transition: 0.5s ease-in-out;
-        font-size: 40px
+        font-size: 40px;
     }
   
 button:hover::before {
