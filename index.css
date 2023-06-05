@@ -111,27 +111,3 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 20px;
-        padding: 15px;
-        width: 300px;
-        height: 300px;
-    }
-  
-button::before {
-        content: "";
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 300px;
-        height: 300px;
-        background: #8a8988;
-        transition: 0.5s ease-in-out;
-    }
-  
-button:hover::before {
-        left: -100%;
-    }
