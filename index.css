@@ -142,7 +142,7 @@ button:hover::before {
     }
 
 button.s2 {
-        position: absolute;
+        position: left;
         top: 50%;
         left: 50%;
         font-size: 50px;
@@ -156,7 +156,7 @@ button.s2 {
   
 button.s2::before {
         content: "32";
-        position: absolute;
+        position: left;
         top: 0%;
         left: 0%;
         width: 400px;
