@@ -1,7 +1,7 @@
 .header {
     padding: 10px; /* some padding */
     text-align: center; /* center the text */
-    background: #2e6e43; /* light blue background */
+    background: #8bcd51; /* light blue background */
     color: black; /* black text color */
 }
 
@@ -107,7 +107,7 @@
 }
 
 body {
-    background-color: #9393b8;
+    background-color: #d8dbd2;
     font-family: Arial, Helvetica, sans-serif;
 }
 
