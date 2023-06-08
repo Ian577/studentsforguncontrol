@@ -1,13 +1,15 @@
 .header {
-    padding: 40px; /* some padding */
+    padding: 1rem;
     text-align: center; /* center the text */
     background: #8bcd51; /* light blue background */
-    color: black; /* black text color */
+    color: #292929; /* black text color */
+    font-family: 'Abril Fatface', cursive;
+    font-size: 7rem;
 }
 
-.div {
+.div.button {
     padding: 10px;
-    position: fixed;
+    position: absolute;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 30px;
@@ -29,12 +31,16 @@
 }
 
 .break {
-    padding-top: 5%;
+    padding-top: 10vh;
 }
 
-.header h1 { /* increases size of header */
-    font-size: 55px;
+.bigbreak {
+    padding-top: 150vh;
 }
+
+/* .header h1 { 
+    font-size: 55px;
+} */
 
 .header h2 {
     font-size: 25px;
@@ -50,7 +56,10 @@
 
 .navbar { /* style the top of the navigation bar */
     overflow: auto; /* hide overflow */
-    background-color: #333; /* dark background color */
+    background-color: #493a32; /* dark background color */
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar a {
@@ -60,6 +69,7 @@
     text-align: center; /* canter the text */
     padding: 16px 20px; /* adds padding */
     text-decoration: none; /* removes underline */
+    border-radius: 10px;
 }
 
 .navbar a.right { /* right aligned link */
@@ -67,7 +77,7 @@
 }
 
 .navbar a:hover { /* change color hen mouse hovers over */
-    background-color: #aaaaaa; /* grey background color */
+    background-color: #9c7d6d; /* grey background color */
     color: black; /* black text color */
 }
 
@@ -131,6 +141,7 @@ button {
         background: #d8dbd2;
         color: #333333;
         transition: 0.6s ease-in-out;
+        text-align: center;
     }
   
 button::before {
@@ -144,16 +155,17 @@ button::before {
         transition: 0.6s ease-in-out;
         font-size: 230px;
         color: #333333;
+        text-align: center;
     }
   
 button:hover::before {
-        left: -100%;
+        left: -145%;
     }
 
 button.s2 {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 100%;
         font-size: 50px;
         padding: 15px;
         width: 400px;
@@ -161,7 +173,7 @@ button.s2 {
         background: #d8dbd2;
         color: #333333;
         transition: 0.6s ease-in-out;
-        z-index: 1;
+        text-align: center;
     }
   
 button.s2::before {
@@ -175,9 +187,45 @@ button.s2::before {
         transition: 0.6s ease-in-out;
         font-size: 230px;
         color: #333333;
+        text-align: center;
     }
   
-button.s2:hover::before {
-        left: 100%;
+button.s2:hover:before {
+        left: 145%;
     }
 
+.st {
+    font-size: 100px;
+    text-align: center;
+}
+
+.st1 {
+    position: relative;
+    top: 10px;
+    left: 10vh;
+}
+
+.img1 {
+    position: absolute;
+    top: 55vh;
+    left: 13rem;
+    z-index: -1;
+}
+
+.st2 {
+    position: relative;
+    top: 50vh;
+    right: 154vh;
+}
+
+.img2 {
+    position: absolute;
+    top: 118vh;
+    left: 56rem;
+    z-index: -1;
+}
+
+.st3 {
+    position: relative;
+    top: 100vh;
+}
