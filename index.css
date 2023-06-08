@@ -215,12 +215,12 @@ button.s2:hover:before {
 .st2 {
     position: relative;
     top: 50vh;
-    right: 154vh;
+    right: 143vh;
 }
 
 .img2 {
     position: absolute;
-    top: 118vh;
+    top: 114vh;
     left: 56rem;
     z-index: -1;
 }
@@ -228,4 +228,5 @@ button.s2:hover:before {
 .st3 {
     position: relative;
     top: 100vh;
+    left: 10vh;
 }
