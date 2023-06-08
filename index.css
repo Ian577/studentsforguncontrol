@@ -5,6 +5,22 @@
     color: #292929; /* black text color */
     font-family: 'Abril Fatface', cursive;
     font-size: 7rem;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: 1s ease-out;
 }
 
 .div.button {
@@ -145,7 +161,7 @@ button {
     }
   
 button::before {
-        content: "12";
+        content: attr(title);
         position: absolute;
         top: 0%;
         left: 0%;
@@ -159,7 +175,7 @@ button::before {
     }
   
 button:hover::before {
-        left: -145%;
+        left: -37vw;
     }
 
 button.s2 {
@@ -177,7 +193,7 @@ button.s2 {
     }
   
 button.s2::before {
-        content: "32";
+        content: attr(title);
         position: absolute;
         top: 0%;
         left: 0%;
@@ -191,42 +207,44 @@ button.s2::before {
     }
   
 button.s2:hover:before {
-        left: 145%;
+        left: 37vw;
     }
-
-.st {
-    font-size: 100px;
-    text-align: center;
-}
 
 .st1 {
     position: relative;
-    top: 10px;
-    left: 10vh;
+    margin-top: 2vh;
+    margin-left: 9vw;
 }
 
 .img1 {
     position: absolute;
-    top: 55vh;
-    left: 13rem;
+    margin-top: -7vh;
+    margin-left: 14vw;
     z-index: -1;
+    display: flex;
 }
 
 .st2 {
     position: relative;
-    top: 50vh;
-    right: 143vh;
+    margin-top: 55vh;
+    right: 82vw;
 }
 
 .img2 {
     position: absolute;
-    top: 114vh;
-    left: 56rem;
+    margin-top: 0%;
+    margin-left: 57vw;
     z-index: -1;
 }
 
 .st3 {
     position: relative;
-    top: 100vh;
-    left: 10vh;
+    margin-top: 110vh;
+    margin-left: 9vw;
+}
+
+.st4 {
+    position: relative;
+    margin-top: 165vh;
+    margin-right: 83vw;
 }
