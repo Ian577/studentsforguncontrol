@@ -4,7 +4,7 @@
     background: #8bcd51; /* light blue background */
     color: #292929; /* black text color */
     font-family: 'Abril Fatface', cursive;
-    font-size: 7rem;
+    font-size: 7em;
     opacity: 1;
     transition-duration: 1s;
     transition-property: opacity;
@@ -86,6 +86,7 @@ body.fade {
     padding: 16px 20px; /* adds padding */
     text-decoration: none; /* removes underline */
     border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar a.right { /* right aligned link */
@@ -95,6 +96,9 @@ body.fade {
 .navbar a:hover { /* change color hen mouse hovers over */
     background-color: #9c7d6d; /* grey background color */
     color: black; /* black text color */
+    transform: scale(1.3);
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 * { /* ensure proper sizing */
@@ -247,4 +251,26 @@ button.s2:hover:before {
     position: relative;
     margin-top: 165vh;
     margin-right: 83vw;
+}
+
+section {
+    display: grid;
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 2vh;
+}
+
+.whyheader {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: -5vh;
+}
+
+.bigtext {
+    font-size: 4em;
+}
+
+.smalltext {
+    font-size: 2em;
 }
