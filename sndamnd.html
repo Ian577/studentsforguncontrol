@@ -18,22 +18,105 @@
 </div>
 </div>
 
+<script>
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+
+    function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        console.log(`entry`, entry, `is = ${entry.isIntersecting}`);
+        setVisible(entry.isIntersecting);
+      });
+    });
+
+    const { current } = domRef;
+    observer.observe(current);
+
+    //                       
+    return () => observer.unobserve(current);
+  }, []);
+
+ 
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);
+</script>
+
 <div class="navbar">
     <a href="problem.html">Why is this a problem?</a>
+    <a href="resources.html">Resources</a>
     <a href="index.html" class="right">Home</a>
 </div>
 <div class="box">
-    <div class="sndamnd" id="explination">
+    <FadeInSection>
+    <div class="sndamnd">
         <p class="smalltext">
-        The second ammendment, part of the Bill or Rights was ratified on December 15, 1791. 
+        The second ammendment: part of the Bill or Rights was ratified on December 15, 1791. 
         It ensures the right of all Americans to bear arms; to posess weapons to 
         protect themselves their rights and their property.
         </p>
     </div>
+    </FadeInSection>
+    <FadeInSection></FadeInSection>
     <div class="sndamnd">
         <p class="smalltext">
-            Because of the Second Ammendment it is difficult to regulate weapons. 
+            Because of the Second Ammendment it is difficult to regulate weapons. With many arguing that
+            the second amendment makes the ban or regulation of weapons would be unconstitutional 
+            there is a challenge to find a legal way to regulate the sale of weapons.
         </p>
     </div>
-    <div class="bigbreak"></div>
+    </FadeInSection>
+    <FadeInSection></FadeInSection>
+    <div class="sndamnd">
+        <p class="smalltext">
+            There have been arguments that say regulating the sale of weapons through things such as 
+            more strict beackground cheks do not violate the second amendment because they do not 
+            prevent all Americans from accessing weapons, while still keeping them out of the hands of 
+            those who would use them for harm.
+        </p>
+    </div>
+    </FadeInSection>
+    <FadeInSection>
+    <div class="sndamnd">
+        <p class="smalltext">
+            Because of the Second Ammendment it is difficult to regulate weapons. With many arguing that
+            the second amendment makes the ban or regulation of weapons unconstitutional,
+            there is a challenge to find a legal way to regulate the sale of weapons.
+        </p>
+    </div>
+    </FadeInSection>
+    <FadeInSection>
+      <div class="sndamnd">
+          <p class="smalltext">
+              As an effort to end gun violence, in 2023 the Biden administration established the 
+              White House Office of Gun Violence Prevention. One of the offices main efforts was the 
+              Bipartisan Safer Communities Act which aims to lower gun violence by increasing the 
+              Federal age limit to buy a gun to 21, improving access to mental health, especialy for 
+              young adults, and granting new authorities to the Justice Department to prosecute 
+              firearm traffickers. The organization is still calling for congress to require safe 
+              storage of firearms, requiring stricter background checks for all gun sales, eliminating 
+              gun manufacturers immunity from liability, and enacting a ban on assault weapons with a 
+              high capacity.
+          </p>
+      </div>
+      </FadeInSection>
 </div class="box">
